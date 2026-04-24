@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wanderer's Log - share your extraordinary travel encounter">
+    <link rel="icon" type="image/png" href="./images/book.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Wanderer's Log: Submit</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <img class="logo-img" src="/images/book.png" alt="site logo">
+            <nav id="main-navigation">
+                <ul role="list">
+                    <li role="listitem"><a href="/">Home</a></li>
+                    <li role="listitem"><a href="stories.html">Stories</a></li>
+                    <li role="listitem"><a href="upload-story.html" class="current">Submit</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="site-header">
+            <a href="/" class="site-title">
+                <span class="title-main">Wanderer's log</span>
+            </a>
+        </div>
+    </header>
+    <main class="form-container" aria-labelledby="form-title">
+        <p class="tagline">Share your story</p>
+        <h1 class="page-title" id="form-title">Submit an Encounter</h1>
+        <form id="eventForm">
+            <label for="title" class="lab-title">Title</label>
+            <input type="text" id="title" name="title" placeholder="A strange light over the lagoon" class="input-title">
+
+            <label for="details" class="lab-details">What happened?</label>
+            <textarea id="details" name="details" rows="5"
+                placeholder="I had been travelling for three days when..." class="input-details"></textarea>
+
+            <label for="datetime" class="lab-date-time">Date &amp; Time</label>
+            <input type="datetime-local" id="datetime" name="datetime" class="input-date-time">
+
+            <label for="location" class="lab-location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Kyoto, Japan" class="input-location">
+
+            <button type="submit" class="submit-btn">Submit your story</button>
+            <div class="form-message">
+                <p class="form-message-text">All encounters will be published on our <a href="./stories.html">stories</a> page.</p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Wanderer's Log. All rights reserved.</p>
+    </footer>
+    <script type="module" src="upload-story.js"></script>
+</body>
+
+</html>
