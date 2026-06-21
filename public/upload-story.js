@@ -60,7 +60,7 @@ form.addEventListener("submit", async function (event) {
       console.error("Server Error:", response.statusText)
     }
   } catch (error) {
-    formMessageText.textContent = `Serious ghouls! Please try again.`
+    formMessageText.textContent = `Please try again.`
     console.error("Error:", error)
   }
 })
